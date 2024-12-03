@@ -1,9 +1,11 @@
 package com.sparta.domain.coupon.repository;
 
 
+import static com.sparta.domain.coupon.QCoupon.coupon;
+import static com.sparta.domain.coupon.QIssuance.issuance;
+
 import com.querydsl.core.types.Projections;
 import com.querydsl.jpa.impl.JPAQueryFactory;
-import com.sparta.domain.coupon.QIssuance;
 import com.sparta.domain.coupon.dto.response.CouponResponseDto;
 import com.sparta.domain.member.Member;
 import java.util.List;
@@ -12,9 +14,6 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Repository;
-
-import static com.sparta.domain.coupon.QCoupon.coupon;
-import static com.sparta.domain.coupon.QIssuance.issuance;
 
 @Repository
 @RequiredArgsConstructor

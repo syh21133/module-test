@@ -1,7 +1,6 @@
 package com.sparta.domain.ticket.repository;
 
 import com.querydsl.jpa.impl.JPAQueryFactory;
-
 import com.sparta.domain.ticket.QTicket;
 import com.sparta.domain.ticket.Ticket;
 import com.sparta.security.UserDetailsImpl;
